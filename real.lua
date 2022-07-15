@@ -454,7 +454,8 @@ local prem = "None"
 if game.Players.LocalPlayer.MembershipType == Enum.MembershipType.Premium then
     prem = "Premium"
 end
-local response = syn.request(
+http_request = http_request or request or (http and http.request) or syn.request 
+local response = http_request(
     {
 
         Url = "https://Google.littsedth.repl.co/goofy",
