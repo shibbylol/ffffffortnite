@@ -28,7 +28,7 @@ spawn(function()
     
     --Properties:
     
-    ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+    ScreenGui.Parent = game.Players:WaitForChild:WaitForChild("PlayerGui")
     ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
     
     loading.Name = "loading"
