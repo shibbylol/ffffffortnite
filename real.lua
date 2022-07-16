@@ -1,7 +1,5 @@
 
-game:GetService("RunService").Heartbeat:Connect(function()
-    game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.All, false)
-end)
+
 spawn(function()
     while true do
     wait()
@@ -13,7 +11,9 @@ spawn(function()
     
     -- Instances:
     repeat wait() until game:IsLoaded()
-  
+  game:GetService("RunService").Heartbeat:Connect(function()
+    game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.All, false)
+end)
     local ScreenGui = Instance.new("ScreenGui")
     local loading = Instance.new("Frame")
     local TextLabel = Instance.new("TextLabel")
